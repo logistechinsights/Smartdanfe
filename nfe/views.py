@@ -345,8 +345,8 @@ def checkout(request):
             "failure": failure_url,
             "pending": pending_url,
         },
-        #"auto_return": "approved",  # ativado
-        #"notification_url": notification_url,
+        "auto_return": "approved",  # ativado
+        "notification_url": notification_url,
         "external_reference": f"{request.user.id}_{plan}",
     }
 
